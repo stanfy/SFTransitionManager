@@ -1,6 +1,6 @@
 # SFTransitionManager
 
-Custom animation transition manager
+Custom animation transition manager inspired by iOSCustomTransitions
 
 
 Install
