@@ -21,7 +21,7 @@ In AppDelegate add the following lines of code with whatever transition object y
 ``` objective-c
 [UIViewController setDefaultPresentationTransitions:[JHPullBackModalTransitionManager new]];
 [UINavigationController setDefaultNavigationTransitions:[JHDropDownNavigationTransitionManager new]];
-//don't set a modal transition to 'RMDateSelectionViewController'
+//don't set a modal transition to 'SFMainViewController'
 [SFMainViewController setDefaultPresentationTransitions:nil];
 ```
 
