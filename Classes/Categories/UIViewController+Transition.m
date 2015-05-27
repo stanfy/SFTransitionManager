@@ -88,7 +88,9 @@ static NSMutableDictionary * _presentationTransitionManagers = nil;
 
     UIViewController * controller = (id) self;
 
-    if ( viewControllerToPresent.presentationTransitions ) {
+    BOOL isExcludeClasses = [viewControllerToPresent isKindOfClass:[UIAlertController class]];
+
+    if ( viewControllerToPresent.presentationTransitions && !isExcludeClasses ) {
         viewControllerToPresent.modalPresentationStyle = UIModalPresentationCustom;
         viewControllerToPresent.transitioningDelegate = self.presentationTransitions;
     }
