@@ -1,0 +1,17 @@
+//
+//  ExamplePrefixHeader.pch
+//  Example
+//
+//  Created by Vitalii Bogdan on 5/25/15.
+//  Copyright (c) 2015 Stanfy. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+
+#ifdef __OBJC__
+
+//frameworks
+#import <UIKit/UIKit.h>
+
+#endif
